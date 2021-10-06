@@ -1,0 +1,100 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(image/sedlo.jpg) ;
+    background-size: cover;
+}
+.menu{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left: 17%;
+    top: 60px;
+}
+.menu_item{
+    background-color: lightseagreen;
+    width: 200px;
+    height: 40px;
+}
+.menu_text{
+    color: rgb(255, 255, 255);
+    font: normal normal 500 18px/41px Ubuntu;
+    position: relative;
+    left: 10%;
+}
+.page_menu{
+    width: 50%;
+    height: 600px;
+    background-image: url(image/back_page_menu.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 32%;
+    top: -230px;
+    gap: 10px;
+    
+}
+.avatar{
+    background-image: url(image/11.png);
+    background-size: cover;
+    width: 24%;
+    height:28%;
+    z-index: 2;
+    margin: 10px;
+}
+.nameText_1{
+    color: rgb(5, 9, 46);
+    text-align: left;
+    font: normal normal 700 44px/82px Ubuntu;
+}
+.nameText_2{
+    color: lightseagreen;
+    text-align: left;
+    font: normal normal 700 44px/82px Ubuntu;
+}
+.proffesion_text{
+    text-align: left;
+    font: normal normal 500 20px/32px Ubuntu;
+}
+hr{
+    padding-bottom: 1px;
+    background-color: #9b9b9bc5;
+    border-bottom:1px solid #f4f4f4ad;
+    width: 60%;
+}
+.about-me_text{
+    font: normal normal 500 15px/22px Ubuntu;
+}
+.about-me{
+    text-align: center;
+    overflow: hidden;
+    width: 51%;
+}
+.contact{
+    background-color: rgba(32, 178, 171, 0.623);
+    border-radius: 5px;
+    height: 8%;
+    width: 70%;
+    text-align: center;
+}
+.contact-text{
+    color: rgb(253, 253, 253);
+    font: normal normal 500 15px/22px Ubuntu;
+    position: relative;
+    top: 20%;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 60%;
+    position: relative;
+    top: 3%;
+    left: 5%;
+}
+
