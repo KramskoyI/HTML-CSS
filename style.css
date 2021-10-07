@@ -6,8 +6,6 @@ body{
     background-repeat: no-repeat;
 }
 .portfolio{
-    /* display: flex;
-    gap: 20%; */
     width: 70%;
     height: 80%;
 }
@@ -48,10 +46,6 @@ body{
     left: 28%;
 }
 .avatar{
-    /* background-image: url(image/11.png);
-    background-size: cover;
-    width: 25%;
-    height:30%; */
     margin: 10px;
 }
 .nameText{
@@ -124,28 +118,72 @@ hr{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     position: absolute;
     top: 8%;
     left: 28%;
+    gap: 28px;
+    overflow: auto;
 }
 .title{
     font: normal normal 500 28px/32px Ubuntu;
     color: rgb(53, 52, 52);
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 .buttons{
     display: flex;
     gap: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 .button{
     background-color: rgb(51, 50, 50);
     width: 250px;
     height: 30px;
+    justify-content: center;
+    align-content: center;
 }
 .textButton{
     color: rgb(255, 250, 250);
 }
 .text_education{
     color: lightseagreen;
-    font: normal normal 500 24px/28px Ubuntu;
+    font: normal normal 700 24px/28px Ubuntu;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    white-space: auto;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.work{
+    color: rgb(53, 53, 53);
+    font: normal normal 700 24px/28px Ubuntu;
+}
+.work-list{
+    color: rgb(53, 53, 53);
+    font: normal normal 400 24px/28px Ubuntu;
+}
+.education{
+    width: 70%;
+    height: 60%;
+    border: 1px double black ;
+    gap: 20px;
+}
+.education-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    height: 80%;
 }
