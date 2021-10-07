@@ -117,4 +117,35 @@ hr{
     top: 9%;
     left: 0%;
 }
-
+.aboutMe{
+    width: 60%;
+    height: 83%;
+    background-image: url(image/back_page_menu.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    left: 28%;
+}
+.title{
+    font: normal normal 500 28px/32px Ubuntu;
+    color: rgb(53, 52, 52);
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.button{
+    background-color: rgb(51, 50, 50);
+    width: 250px;
+    height: 30px;
+}
+.textButton{
+    color: rgb(255, 250, 250);
+}
+.text_education{
+    color: lightseagreen;
+    font: normal normal 500 24px/28px Ubuntu;
+}
