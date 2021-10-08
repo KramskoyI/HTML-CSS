@@ -206,3 +206,8 @@ hr{
     left: -122px;
     top: 0px;
 }
+.error{
+ position: absolute;
+ left: 450px;
+ top:   67px;
+}

@@ -17,17 +17,17 @@
             <div class="menu_item" id="resume">
                 <span class="menu_text">  RESUME</span>
             </div>
-            <div class="menu_item">
-                <span class="menu_text"><a href="eror/eror.html" coord="100, 100, 200, 200"></a>SKILS</span>
+            <div class="menu_item" id="err">
+                <span class="menu_text">SKILS</span>
                 
             </div>
-            <div class="menu_item">
+            <div class="menu_item" id="err">
                 <span class="menu_text">PORTFOLIO</span>
             </div>
-            <div class="menu_item">
+            <div class="menu_item" id="err">
                 <span class="menu_text">BLOG</span>
             </div>
-            <div class="menu_item">
+            <div class="menu_item" id="err">
                 <span class="menu_text">CONTACT</span>
             </div>
         </div>
@@ -73,15 +73,9 @@
             <hr class="linkR">
             <div class="buttons">
                 <div class="button">
-                    <!-- <div class="dl">
-                        <img src="image/dl.png" alt="">
-                    </div> -->
                     <span class="textButton">DOWNLOADS MY RESUME</span>
                 </div>
                 <div class="button">
-                    <!-- <div class="dl">
-                        <img src="image/dl.png" alt="">
-                    </div> -->
                     <span class="textButton">GET IN TUOCH</span>
                 </div>
             </div>
@@ -108,20 +102,31 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+        <div class="error" id="errTest" style="display: none;">
+            <img src="image/eror.png" alt="" width="800px" height="500px">
         </div>
     </div>
     <script type="text/javascript">
         let portfolio = document.getElementById('portfolio');
         let aboutMe = document.getElementById('aboutMe');
+        let err = document.getElementById('err') 
 
         resume. onclick = function(){
             portfolio.style.display = "none";
             aboutMe.style.display = "flex";
+            errTest.style.display = "none";
         }
         home.onclick = function(){
             aboutMe.style.display = "none";
             portfolio.style.display = "flex";
+            errTest.style.display = "none";
+        }
+        
+        err.onclick = function (){
+            errTest.style.display = "block";
+            aboutMe.style.display = "none";
+            portfolio.style.display = "none";
         }
     </script>
 </body>
