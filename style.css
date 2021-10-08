@@ -72,8 +72,8 @@ body{
 }
 hr{
     padding-bottom: 1px;
-    background-color: #9b9b9bc5;
-    border-bottom:1px solid #f4f4f4ad;
+    background-color: #161616c5;
+    border-bottom:1px solid #020202ad;
     width: 60%;
 }
 .about-me_text{
@@ -130,14 +130,14 @@ hr{
     color: rgb(53, 52, 52);
     position: relative;
     top: 30px;
-    left: 30px;
+    left: 15%;
 }
 .buttons{
     display: flex;
     gap: 20px;
     position: relative;
     top: 30px;
-    left: 30px;
+    left: 15%;
     width: 50%;
 }
 .button{
@@ -157,7 +157,7 @@ hr{
     font: normal normal 700 24px/28px Ubuntu;
     position: relative;
     top: 30px;
-    left: 30px;
+    left: 15%;
 }
 .education{
     display: flex;
@@ -179,7 +179,7 @@ hr{
 }
 .education{
     width: 70%;
-    height: 60%;
+    height: 68%;
     border: 1px double black ;
     gap: 20px;
 }
@@ -189,4 +189,20 @@ hr{
     gap: 10px;
     width: 90%;
     height: 80%;
+    position: relative;
+    left: 12%;
+}
+.linkR{
+    color: rgb(0, 0, 0);
+    width: 60%;
+    position: relative;
+    left: -50px;
+    top: 30px;
+}
+.linkRel{
+    color: rgb(0, 0, 0);
+    width: 60%;
+    position: relative;
+    left: -122px;
+    top: 0px;
 }
