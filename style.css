@@ -1,267 +1,259 @@
-@media screen and (max-width: 1680px) {
-    body{
-        max-width: 100%;
-        max-height: 1050px;
-        background-image: url(image/sedlo.jpg) ;
-        background-size: 100% , 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(75, 75, 133);
-    }
-    .portfolio{
-        width: 70%;
-        max-height: 80%;
-        
-    }
-    .portfolio_menu{
-        width: 18%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
-        left: 17%;
-        top: 60px;
-        margin: 10px 20px 10px 20px;
-    }
-    .menu_item{
-        background-color: lightseagreen;
-        width: 200px;
-        height: 40px;
-    }
-    .menu_item:hover{
+*{    
+    margin:0; 
+    padding:0; 
+}
+body{
+    max-width: 100%;
+    max-height: 1050px;
+    background-image: url(image/sedlo.jpg) ;
+    background-repeat: no-repeat;
+}
+.portfolio{
+    width: 70%;
+    max-height: 80%;
+}
+.portfolio_menu{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    left: 17%;
+    top: 60px;
+    margin: 10px 20px 10px 20px;
+}
+.menu_item{
+    background-color: lightseagreen;
+    width: 200px;
+    height: 40px;
+}
+.menu_item:hover{
         background-color: rgb(17, 41, 109);
-    }
-    .menu_text{
-        color: rgb(255, 255, 255);
-        font: normal normal 500 18px/41px Ubuntu;
-        position: relative;
-        left: 10%;
-    }
-    .portfolio_page-menu{
-        width: 60%;
-        max-height: 83%;
-        background-image: url(image/back_page_menu.jpg) ;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 6.5%;
-        left: 28%;
-        gap: 10px;
-        margin: 0px 3%;
-    }
-    .avatar{
-        width: 22%;
-        height: 222px;
-        background-image: url(image/11.png);
-        background-size: contain;
-        margin: 10px;
-        background-position: center center;
-    }
-    .nameText{
-        position: relative;
-        top: -2%;
-    }
-    .nameText_1{
-        color: rgb(5, 9, 46);
-        text-align: left;
-        font: normal normal 700 50px/88px Ubuntu;
-    }
-    .nameText_2{
-        color: lightseagreen;
-        text-align: left;
-        font: normal normal 700 50px/88px Ubuntu;
-    }
-    .proffesion{
-        position: relative;
-        top: -2%;
-    }
-    .proffesion_text{
-        text-align: left;
-        font: normal normal 500 22px/28px Ubuntu;
-    }
-    hr{
-        padding-bottom: 1px;
-        background-color: #161616c5;
-        border-bottom:1px solid #020202ad;
-        width: 60%;
-    }
-    .about-me_text{
-        font: normal normal 500 22px/28px Ubuntu;
-    }
-    .about-me{
-        text-align: center;
-        overflow: hidden;
-        width: 52%;
-        position: relative;
-        top: 2%;
-    }
-    .contact{
-        background-color: rgba(32, 178, 171, 0.623);
-        border-radius: 5px;
-        height: 8%;
-        width: 70%;
-        text-align: center;
-        position: relative;
-        top: 4%;
-    }
-    .contact-text{
-        color: rgb(253, 253, 253);
-        font: normal normal 500 18px/24px Ubuntu;
-        position: relative;
-        top: 30%;
-    }
-    .message{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        max-width: 25%;
-        max-height: 9%;
-        position: relative;
-        top: 9%;
-        left: 0%;
-        gap: 5px;
-        margin: 5px;
-    }
-    .message_img1{
-        width: 40px;
-        height: 36px;
-        background-image: url(image/inst.png);
-        background-size: cover;
-        
-    }
-    .message_img2{
-        width: 40px;
-        height: 36px;
-        background-image: url(image/fasebook.png);
-        background-size: cover;
-    }
-    .message_img3{
-        width: 40px;
-        height: 36px;
-        background-image: url(image/tviter.png);
-        background-size: cover;
-    }
-    .message_img4{
-        width: 40px;
-        height: 36px;
-        background-image: url(image/in.png);
-        background-size: cover;
-    }
-    .message_img5{
-        width: 40px;
-        height: 36px;
-        background-image: url(image/youtube.png);
-        background-size: cover;
-    }
-    .aboutMe{
-        width: 60%;
-        max-height: 83%;
-        background-image: url(image/back_page_menu.jpg) ;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        position: absolute;
-        top: 8.5%;
-        left: 28%;
-        gap: 28px;
-        overflow: auto;
-        margin: 0px 3%;
-    }
-    .title{
-        font: normal normal 500 28px/32px Ubuntu;
-        color: rgb(53, 52, 52);
-        position: relative;
-        top: 30px;
-        left: 15%;
-    }
-    .buttons{
-        display: flex;
-        gap: 20px;
-        position: relative;
-        top: 30px;
-        left: 15%;
-        width: 60%;
-    }
-    .button{
-        background-color: rgb(51, 50, 50);
-        width: 250px;
-        height: 30px;
-    }
-    .textButton{
-        color: rgb(255, 250, 250);
-        font: normal normal 700 16px/20px Ubuntu;
-        position: relative;
-        top: 15%;
-        left: 5%;
-    }
-    .text_education{
-        color: lightseagreen;
-        font: normal normal 700 24px/28px Ubuntu;
-        position: relative;
-        top: 30px;
-        left: 15%;
-    }
-    .education{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 30px;
-        left: 30px;
-        white-space: auto;
-        box-sizing: border-box;
-        padding: 15px;
-    }
-    .work{
-        color: rgb(53, 53, 53);
-        font: normal normal 700 24px/28px Ubuntu;
-    }
-
-    .education{
-        width: 70%;
-        height: 68%;
-        border: 1px double black ;
-        gap: 20px;
-    }
-    .education-list{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 90%;
-        height: 80%;
-        position: relative;
-        left: 12%;
-    }
-    .linkR{
-        color: rgb(0, 0, 0);
-        width: 60%;
-        position: relative;
-        left: -4%;
-        top: 30px;
-    }
-    .linkRel{
-        color: rgb(0, 0, 0);
-        width: 60%;
-        position: relative;
-        left: -20%;
-        top: 0px;
-    }
-    .error{
+}
+.menu_text{
+    color: rgb(255, 255, 255);
+    font: normal normal 500 18px/41px Ubuntu;
+    position: relative;
+    left: 10%;
+}
+.portfolio_page-menu{
+    width: 60%;
+    max-height: 83%;
+    background-image: url(image/back_page_menu.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    left: 550px;
-    top:   67px;
-    }
+    top: 6.5%;
+    left: 28%;
+    gap: 10px;
+    margin: 0px 3%;
+}
+.avatar{
+    width: 23%;
+    height: 220px;
+    background-image: url(image/11.png);
+    background-size: 100% 100%;
+    margin: 10px;
+    background-position: center center;
+}
+.nameText{
+    position: relative;
+    top: -2%;
+}
+.nameText_1{
+    color: rgb(5, 9, 46);
+    text-align: left;
+    font: normal normal 700 50px/88px Ubuntu;
+}
+.nameText_2{
+    color: lightseagreen;
+    text-align: left;
+    font: normal normal 700 50px/88px Ubuntu;
+}
+.proffesion{
+    position: relative;
+    top: -2%;
+}
+.proffesion_text{
+    text-align: left;
+    font: normal normal 500 22px/28px Ubuntu;
+}
+hr{
+    padding-bottom: 1px;
+    background-color: #161616c5;
+    border-bottom:1px solid #020202ad;
+    width: 60%;
+}
+.about-me_text{
+    font: normal normal 500 22px/28px Ubuntu;
+}
+.about-me{
+    text-align: center;
+    overflow: hidden;
+    width: 52%;
+    position: relative;
+    top: 2%;
+}
+.contact{
+    background-color: rgba(32, 178, 171, 0.623);
+    border-radius: 5px;
+    height: 8%;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: 4%;
+}
+.contact-text{
+    color: rgb(253, 253, 253);
+    font: normal normal 500 18px/24px Ubuntu;
+    position: relative;
+    top: 30%;
+}
+.message{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 25%;
+    max-height: 9%;
+    position: relative;
+    top: 9%;
+    left: 0%;
+    gap: 5px;
+    margin: 5px;
+}
+.message_img1{
+    width: 40px;
+    height: 36px;
+    background-image: url(image/inst.png);
+    background-size: cover;
+}
+.message_img2{
+    width: 40px;
+    height: 36px;
+    background-image: url(image/fasebook.png);
+    background-size: cover;
+}
+.message_img3{
+    width: 40px;
+    height: 36px;
+    background-image: url(image/tviter.png);
+    background-size: cover;
+}
+.message_img4{
+    width: 40px;
+    height: 36px;
+    background-image: url(image/in.png);
+    background-size: cover;
+}
+.message_img5{
+    width: 40px;
+    height: 36px;
+    background-image: url(image/youtube.png);
+    background-size: cover;
+}
+.aboutMe{
+    width: 60%;
+    max-height: 83%;
+    background-image: url(image/back_page_menu.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: absolute;
+    top: 6.5%;
+    left: 28%;
+    gap: 28px;
+    overflow: auto;
+    margin: 0px 3%;
+}
+.title{
+    font: normal normal 500 28px/32px Ubuntu;
+    color: rgb(53, 52, 52);
+    position: relative;
+    top: 30px;
+    left: 15%;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 30px;
+    left: 15%;
+    width: 60%;
+}
+.button{
+    background-color: rgb(51, 50, 50);
+    width: 250px;
+    height: 30px;
+}
+.textButton{
+    color: rgb(255, 250, 250);
+    font: normal normal 700 16px/20px Ubuntu;
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+.text_education{
+    color: lightseagreen;
+    font: normal normal 700 24px/28px Ubuntu;
+    position: relative;
+    top: 30px;
+    left: 15%;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    white-space: auto;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.work{
+    color: rgb(53, 53, 53);
+    font: normal normal 700 24px/28px Ubuntu;
+}
+.education{
+    width: 70%;
+    height: 68%;
+    border: 1px double black ;
+    gap: 20px;
+}
+.education-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    left: 12%;
+}
+.linkR{
+    color: rgb(0, 0, 0);
+    width: 60%;
+    position: relative;
+    left: 15%;
+    top: 30px;
+}
+.linkRel{
+    color: rgb(0, 0, 0);
+    width: 60%;
+}
+.error{
+position: absolute;
+left: 550px;
+top:   67px;
 }
 @media screen and (max-width: 1600px) {
     .avatar{
-        width: 22%;
-    height: 200px;
+        height: 200px;
     }
 }
 @media screen and (max-width: 1440px) {
     .avatar{
-        width: 24%;
         height: 208px;
     }
 }
@@ -277,7 +269,6 @@
         font: normal normal 700 40px/78px Ubuntu;
     }
     .avatar{
-        width: 24%;
         height: 202px;
     }
     .proffesion_text{
@@ -287,19 +278,30 @@
 }
 @media screen and (max-width: 1350px) {
     .avatar{
-        width: 25%;
         height: 195px;
+    }
+    .textButton {
+        font: normal normal 700 14px/18px Ubuntu;
+        text-align: center;
+        top: 30%;
+        left: 0;
+    }
+    .work {
+        font: normal normal 700 20px/24px Ubuntu;
+    }
+    .button {
+        height: 50px;
+        margin: auto;
+        text-align: center;
     }
 }
 @media screen and (max-width: 1280px) {
     .avatar{
-        width: 24%;
         height: 180px;
     }
 }
 @media screen and (max-width: 1200px) {
     .avatar{
-        width: 24%;
         height: 174px;
     }
     .menu_item {
@@ -308,7 +310,6 @@
 }
 @media screen and (max-width: 1150px){
     .avatar {
-        width: 24%;
         height: 166px;
     }
     .menu_item {
@@ -317,13 +318,11 @@
 }
 @media screen and (max-width: 1100px) {
     .avatar{
-        width: 25%;
         height: 165px;
     }
 }
 @media screen and (max-width: 1000px) {
     .avatar{
-        width: 25%;
         height: 150px;
     }
     .portfolio_page-menu {
@@ -344,7 +343,6 @@
 }
 @media screen and (max-width: 950px){
     .avatar {
-        width: 25%;
         height: 140px;
     }
 }
@@ -352,6 +350,9 @@
     .avatar {
         width: 25%;
         height: 131px;
+    }
+    .buttons {
+        flex-direction: column;
     }
     .menu_text {
         color: rgb(255, 255, 255);
@@ -376,6 +377,10 @@
     }
     .avatar {
         height: 128px;
+    }
+    .aboutMe {
+        top: 12.5%;
+        left: 15%;
     }
 }
 @media screen and (max-width: 800px){
@@ -428,6 +433,87 @@
     .portfolio_menu {
         left: 17%;
     }
+    .aboutMe {
+        top: 15.5%;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 550px){
+    .button {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .portfolio_menu {
+        margin: 0px;
+        padding: 0px;
+    }
+    .portfolio_page-menu {
+        margin: 0px;
+        padding: 0px;
+        width: 67%;
+        top: 14.5%;
+    }
+    .avatar {
+        width: 64%;
+        height: 131px;
+    }
+    .nameText_1 {
+        font: normal normal 700 20px/58px Ubuntu;
+    }
+    .nameText_2 {
+        font: normal normal 700 20px/58px Ubuntu;
+    }
+    .proffesion_text {
+        font: normal normal 500 16px/24px Ubuntu;
+    }
+    .about-me_text {
+        font: normal normal 500 14px/20px Ubuntu;
+    }
+    .message {
+        max-width: 90%;
+    }
+    .title {
+        font: normal normal 500 20px/24px Ubuntu;
+        left: 0;
+    }
+    .textButton {
+        font: normal normal 700 12px/16px Ubuntu;
+    }
+    .aboutMe{
+        text-align: center;
+        width: 85%;
+        margin: 0 -8%;
+    }
+    .linkR {
+        width: 70%;
+        left: 14%;
+    }
+    .buttons {
+        left: 20%;
+    }
+    .text_education {
+        text-align: center;
+        font: normal normal 700 20px/24px Ubuntu;
+        left: 0;
+    }
+    .education-list {
+        left: 0;
+    }
+    .work {
+        font: normal normal 700 14px/20px Ubuntu;
+    }
+    .education-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 110%;
+        height: 80%;
+    }
+    .linkRel {
+            margin: 0px 33px;
+    }
 }
 
-
+ 
