@@ -58,6 +58,19 @@ body{
     margin: 10px;
     background-position: center center;
 }
+.avatar:hover{
+    animation: 2s linear 0s normal none infinite running rot;
+    -webkit-animation: 2s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
 .nameText{
     position: relative;
     top: -2%;
@@ -104,12 +117,31 @@ hr{
     text-align: center;
     position: relative;
     top: 4%;
+    white-space:nowrap;
+    overflow:hidden;
 }
 .contact-text{
     color: rgb(253, 253, 253);
     font: normal normal 500 18px/24px Ubuntu;
     position: relative;
     top: 30%;
+    
+}
+.contact .contact-text {
+    
+    display:inline-block;
+    padding-left:100%;
+    -webkit-animation: marquee 10s infinite linear;
+    animation: marquee 10s infinite linear;
+    }
+
+@-webkit-keyframes marquee {
+    0%{-webkit-transform: translate(0, 0);}
+    100%{-webkit-transform: translate(-100%, 0);}
+    }
+    @keyframes marquee{
+    0%{transform: translate(0, 0);}
+    100%{transform: translate(-100%, 0)}
 }
 .message{
     display: flex;
