@@ -29,10 +29,9 @@ body{
 }
 .menu_item:hover{
     background-color: rgb(17, 41, 109);
+    cursor: pointer
 }
-.menu_item:active{
-    background-color: rgb(17, 41, 109);
-}
+
 .menu_item:active{
     background-color: rgb(129, 130, 134);
 }
@@ -135,6 +134,9 @@ hr{
     display: flex;
     gap: 5px;
     margin: 10px;
+}
+.message:hover{
+    cursor: pointer
 }
 .message_img1{
     width: 40px;
