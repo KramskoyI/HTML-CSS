@@ -12,10 +12,10 @@
     <div class="portfolio">
         <div class="portfolio_menu hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
+            <label class="menu__btn" for="menu__toggle" id="button">
                 <span></span>
             </label>
-            <ul class="menu__box">
+            <ul class="menu__box" id="box">
                 <li  class="menu_item" id="home"><a href="#" class="menu_text">HOME</a></li>
                 <li class="menu_item" id="resume"><a href="#" class="menu_text">RESUME</a></li>
                 <li class="menu_item" id="err1"><a href="#" class="menu_text">SKILS</a></li>
@@ -96,37 +96,74 @@
     <script type="text/javascript">
         let portfolio = document.getElementById('portfolio');
         let aboutMe = document.getElementById('aboutMe');
-        let err = document.getElementById('err') 
+        let err = document.getElementById('err');
+        let button = document.getElementById('button');
 
         resume. onclick = function(){
             portfolio.style.display = "none";
             aboutMe.style.display = "flex";
             errTest.style.display = "none";
+            resume.style.background = "red";
+            home.style.background = "lightseagreen";
+            err1.style.background = "lightseagreen";
+            err2.style.background = "lightseagreen";
+            err3.style.background = "lightseagreen";
+            err4.style.background = "lightseagreen";
         }
         home.onclick = function(){
             aboutMe.style.display = "none";
             portfolio.style.display = "flex";
             errTest.style.display = "none";
+            resume.style.background = "lightseagreen";
+            home.style.background = "red";
+            err1.style.background = "lightseagreen";
+            err2.style.background = "lightseagreen";
+            err3.style.background = "lightseagreen";
+            err4.style.background = "lightseagreen";
         }
         err1.onclick = function (){
             errTest.style.display = "block";
             aboutMe.style.display = "none";
             portfolio.style.display = "none";
+            resume.style.background = "lightseagreen";
+            home.style.background = "lightseagreen";
+            err1.style.background = "red";
+            err2.style.background = "lightseagreen";
+            err3.style.background = "lightseagreen";
+            err4.style.background = "lightseagreen";
         }
         err2.onclick = function (){
             errTest.style.display = "block";
             aboutMe.style.display = "none";
             portfolio.style.display = "none";
+            resume.style.background = "lightseagreen";
+            home.style.background = "lightseagreen";
+            err1.style.background = "lightseagreen";
+            err2.style.background = "red";
+            err3.style.background = "lightseagreen";
+            err4.style.background = "lightseagreen";
         }
         err3.onclick = function (){
             errTest.style.display = "block";
             aboutMe.style.display = "none";
             portfolio.style.display = "none";
+            resume.style.background = "lightseagreen";
+            home.style.background = "lightseagreen";
+            err1.style.background = "lightseagreen";
+            err2.style.background = "lightseagreen";
+            err3.style.background = "red";
+            err4.style.background = "lightseagreen";
         }
         err4.onclick = function (){
             errTest.style.display = "block";
             aboutMe.style.display = "none";
             portfolio.style.display = "none";
+            resume.style.background = "lightseagreen";
+            home.style.background = "lightseagreen";
+            err1.style.background = "lightseagreen";
+            err2.style.background = "lightseagreen";
+            err3.style.background = "lightseagreen";
+            err4.style.background = "red";
         }
     </script>
 </body>

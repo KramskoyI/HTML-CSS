@@ -5,6 +5,7 @@
 input{
     display: none;
 }
+
 body{
     max-width: 100%;
     background-image: url(image/sedlo.jpg);
@@ -178,6 +179,7 @@ hr{
     background-size: cover;
 }
 .aboutMe{
+    width: 1200px;
     background-image: url(image/back_page_menu.jpg) ;
     background-size: cover;
     display: flex;
@@ -250,14 +252,18 @@ hr{
     width: 60%;
 }
 .error{
-    width: 50%;
+    width: 1200px;
     height: 400px;
     margin: auto;
     background-image: url(image/eror.png);
     background-position: center center;
     background-size: cover;
+    margin: 10px 0px;
+    padding: 10px;
 }
-    
+a:active{
+    color: blueviolet;
+}   
 @media screen and (max-width: 1400px) {
     .nameText_1{
         color: rgb(5, 9, 46);
@@ -348,7 +354,7 @@ hr{
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 3;
     }
     /* добавляем "гамбургер" */
     .menu__btn > span,
@@ -395,7 +401,7 @@ hr{
     transition-duration: .25s;
     }
     /* контейнер меню */
-.menu__box {
+    .menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -409,9 +415,9 @@ hr{
     text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
+   }
   /* элементы меню */
-  .menu__item {
+   .menu__item {
     display: block;
     padding: 12px 24px;
     color: #333;
@@ -423,10 +429,17 @@ hr{
   .menu__item:hover {
     background-color: #CFD8DC;
   }
+  .aboutMe {
+    width: 600px;
+    
+  }
 }
 @media screen and (max-width: 750px){
     .portfolio_page-menu {
         margin: 0px 0px;
+    }
+    .aboutMe {
+        width: 500px;
     }
 }
 @media screen and (max-width: 650px){
@@ -464,6 +477,9 @@ hr{
     .menu__box {
         width: 160px;
     }
+    .aboutMe {
+        width: 450px;
+    }
 }
 @media screen and (max-width: 550px){
     .button {
@@ -471,6 +487,9 @@ hr{
     }
     .portfolio_page-menu {
         width: 430px;
+    }
+    .aboutMe {
+        width: 420px;
     }
 }
 @media screen and (max-width: 500px){
@@ -480,10 +499,16 @@ hr{
     .portfolio_page-menu {
         width: 400px;
     } 
+    .aboutMe {
+        width: 360px;
+    }
 }
 @media screen and (max-width: 450px){
     .portfolio_page-menu {
         width: 330px;
+    }
+    .aboutMe {
+        width: 320px;
     }
 }
 
@@ -499,6 +524,9 @@ hr{
         max-width: 79%;
     }
     .portfolio_page-menu {
+        width: 300px;
+    }
+    .aboutMe {
         width: 300px;
     }
 
