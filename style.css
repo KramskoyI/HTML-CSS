@@ -2,6 +2,9 @@
     margin:0; 
     padding:0; 
 }
+input{
+    display: none;
+}
 body{
     max-width: 100%;
     background-image: url(image/sedlo.jpg);
@@ -16,15 +19,21 @@ body{
     justify-content: space-between;
 }
 .portfolio_menu{
-    width: 18%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 0% 1%;
 }
+li {
+    list-style-type: none; 
+    margin-bottom: 1em;
+}
+a { 
+    text-decoration: none; 
+} 
 .menu_item{
     background-color: lightseagreen;
-    width: 200px;
     height: 40px;
 }
 .menu_item:hover{
@@ -41,6 +50,7 @@ body{
     margin: 10px;
 }
 .portfolio_page-menu{
+    width: 1200px;
     background-image: url(image/back_page_menu.jpg) ;
     background-size: cover;
     display: flex;
@@ -50,9 +60,8 @@ body{
     margin: 0px 3%;
 }
 .avatar{
-    width: 20%;
-    max-height: 40%;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-image: url(image/11.png);
     background-size: 100% 100%;
     margin: 10px;
@@ -248,12 +257,7 @@ hr{
     background-position: center center;
     background-size: cover;
 }
-@media screen and (max-width: 1680px) {
-    .avatar {
-        width: 23%;
-        height: 200px;  
-    }
-}    
+    
 @media screen and (max-width: 1400px) {
     .nameText_1{
         color: rgb(5, 9, 46);
@@ -274,8 +278,7 @@ hr{
     .textButton {
         font: normal normal 700 14px/18px Ubuntu;
         text-align: center;
-        top: 30%;
-        left: 0;
+        
     }
     .work {
         font: normal normal 700 20px/24px Ubuntu;
@@ -287,18 +290,10 @@ hr{
     }
 }
 @media screen and (max-width: 1200px) {
-    .menu_item {
-        width: 180px;
-    }
-    .avatar {
-        width: 23%;
-        height: 140px;
-    }
+    
 }
 @media screen and (max-width: 1150px){
-    .menu_item {
-        width: 112%;
-    }
+    
 }
 @media screen and (max-width: 1000px) {
     .portfolio_page-menu {
@@ -307,9 +302,6 @@ hr{
     .contact-text {
         color: rgb(253, 253, 253);
         font: normal normal 500 14px/20px Ubuntu;
-    }
-    .menu_item {
-        width: 122%;
     }
 }
 @media screen and (max-width: 900px){
@@ -320,9 +312,6 @@ hr{
         color: rgb(255, 255, 255);
         font: normal normal 500 14px/37px Ubuntu;
     }
-    .message {
-        max-width: 37%;
-    }
 }
 @media screen and (max-width: 850px){
     .portfolio{
@@ -330,7 +319,6 @@ hr{
     }
     .portfolio_menu {
         flex-direction: row;
-        width: 94%;
         margin: 20px;
     }
     .buttons {
@@ -343,6 +331,103 @@ hr{
     .error {
         width: 80%;
     }
+    .portfolio_page-menu {
+        width: 600px;
+    }
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+     }
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+    .menu__box {
+    transition-duration: .25s;
+    }
+    .menu__item {
+    transition-duration: .25s;
+    }
+    /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+}
+@media screen and (max-width: 750px){
+    .portfolio_page-menu {
+        margin: 0px 0px;
+    }
 }
 @media screen and (max-width: 650px){
     .menu_text {
@@ -351,7 +436,7 @@ hr{
     }
     .menu_item {
         height: 28px;
-        width: 29%;
+        
     }
     .portfolio_menu {
         flex-wrap: wrap;
@@ -372,24 +457,40 @@ hr{
     .message {
         max-width: 53%;
     }  
-    .avatar {
-        height: 104px;
-    } 
+    .portfolio_page-menu {
+        width: 500px;
+        margin: auto;
+    }
+    .menu__box {
+        width: 160px;
+    }
 }
 @media screen and (max-width: 550px){
     .button {
         width: 100%;
+    }
+    .portfolio_page-menu {
+        width: 430px;
     }
 }
 @media screen and (max-width: 500px){
     .message {
         max-width: 60%;
     }
+    .portfolio_page-menu {
+        width: 400px;
+    } 
 }
+@media screen and (max-width: 450px){
+    .portfolio_page-menu {
+        width: 330px;
+    }
+}
+
 @media screen and (max-width: 400px){
     .avatar {
-        width: 48%;
-        height: 104px;
+        width: 150px;
+        height: 150px;
     }
     .proffesion {
         margin: 0px 53px;
@@ -397,6 +498,10 @@ hr{
     .message {
         max-width: 79%;
     }
+    .portfolio_page-menu {
+        width: 300px;
+    }
+
 }
 @media screen and (max-width: 320px){
     .portfolio_menu {
@@ -404,9 +509,10 @@ hr{
         padding: 0px;
     }
     .portfolio_page-menu {
-        margin: 0px;
+        margin: 30px auto;
         padding: 0px;
-        height: 48%;
+        
+        width: 260px;
     }
     .proffesion {
         margin: 0px 53px;
