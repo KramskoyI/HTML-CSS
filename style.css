@@ -31,6 +31,9 @@ body{
     background-color: rgb(17, 41, 109);
 }
 .menu_item:active{
+    background-color: rgb(17, 41, 109);
+}
+.menu_item:active{
     background-color: rgb(129, 130, 134);
 }
 .menu_text{
@@ -68,11 +71,6 @@ body{
       transform: rotateY(360deg);
     }
   }
-
-.nameText{
-    position: relative;
-    top: -2%;
-}
 .nameText_1{
     color: rgb(5, 9, 46);
     text-align: left;
@@ -169,73 +167,59 @@ hr{
     background-size: cover;
 }
 .aboutMe{
-    width: 60%;
-    max-height: 83%;
     background-image: url(image/back_page_menu.jpg) ;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    position: absolute;
-    top: 5.5%;
-    left: 28%;
+    justify-content: center;
+    align-items: center;
     gap: 28px;
     overflow: auto;
     margin: 0px 3%;
 }
+.title-resume{
+    margin: 20px 160px;
+}
 .title{
     font: normal normal 500 28px/32px Ubuntu;
     color: rgb(53, 52, 52);
-    position: relative;
-    top: 30px;
-    left: 15%;
 }
 .buttons{
     display: flex;
     gap: 20px;
-    position: relative;
-    top: 30px;
-    left: 15%;
     width: 60%;
+    margin: 0px 160px;
 }
 .button{
     background-color: rgb(51, 50, 50);
     width: 250px;
     height: 30px;
+    padding: 10px 20px;
 }
 .textButton{
     color: rgb(255, 250, 250);
     font: normal normal 700 16px/20px Ubuntu;
-    position: relative;
-    top: 15%;
-    left: 5%;
+    padding: 10px 10px;
 }
 .text_education{
     color: lightseagreen;
     font: normal normal 700 24px/28px Ubuntu;
-    position: relative;
-    top: 30px;
-    left: 15%;
+   
 }
 .education{
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 30px;
-    left: 42px;
     white-space: auto;
     box-sizing: border-box;
     padding: 15px;
-}
-.work{
-    color: rgb(53, 53, 53);
-    font: normal normal 700 24px/28px Ubuntu;
-}
-.education{
     width: 70%;
     height: 68%;
     border: 1px double black ;
     gap: 20px;
+}
+.work{
+    color: rgb(53, 53, 53);
+    font: normal normal 700 24px/28px Ubuntu;
 }
 .education-list{
     display: flex;
@@ -243,27 +227,21 @@ hr{
     gap: 10px;
     width: 80%;
     height: 80%;
-    position: relative;
-    left: 12%;
-    
+    align-items: center;
 }
 .linkR{
     color: rgb(0, 0, 0);
     width: 60%;
-    position: relative;
-    left: 15%;
-    top: 30px;
+    margin: 0px 160px;
 }
 .linkRel{
     color: rgb(0, 0, 0);
     width: 60%;
 }
 .error{
-    position: absolute;
-    left: 500px;
-    top: 70px;
     width: 50%;
-    height: 50%;
+    height: 400px;
+    margin: auto;
     background-image: url(image/eror.png);
     background-position: center center;
     background-size: cover;
@@ -339,8 +317,6 @@ hr{
     .menu_text {
         color: rgb(255, 255, 255);
         font: normal normal 500 14px/37px Ubuntu;
-        position: relative;
-        left: 10%;
     }
     .message {
         max-width: 37%;
@@ -352,27 +328,32 @@ hr{
     }
     .portfolio_menu {
         flex-direction: row;
-        width: 20%;
+        width: 94%;
         margin: 20px;
     }
-    .aboutMe {
-        top: 12.5%;
-        left: 15%;
+    .buttons {
+        height: 50px;
+        margin: 0px 113px;
+    }
+    .education-list {
+        margin: -39px 160px;
+    }
+    .error {
+        width: 80%;
     }
 }
 @media screen and (max-width: 650px){
     .menu_text {
         color: rgb(255, 255, 255);
         font: normal normal 500 10px/30px Ubuntu;
-        position: relative;
-        left: 10%;
-    }
-    .portfolio_menu {
-        flex-wrap: wrap;
     }
     .menu_item {
         height: 28px;
         width: 29%;
+    }
+    .portfolio_menu {
+        flex-wrap: wrap;
+        margin: 35px;
     }
     .nameText_1{
         font: normal normal 700 30px/68px Ubuntu;
@@ -388,31 +369,46 @@ hr{
     }
     .message {
         max-width: 53%;
-    }   
-    .portfolio_menu {
-        left: 17%;
-    }
-    .aboutMe {
-        top: 15.5%;
-        left: 15%;
-    }
+    }  
+    .avatar {
+        height: 104px;
+    } 
 }
 @media screen and (max-width: 550px){
     .button {
         width: 100%;
     }
 }
+@media screen and (max-width: 500px){
+    .message {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 400px){
+    .avatar {
+        width: 48%;
+        height: 104px;
+    }
+    .proffesion {
+        margin: 0px 53px;
+    }
+    .message {
+        max-width: 79%;
+    }
+}
 @media screen and (max-width: 320px){
     .portfolio_menu {
-        margin: 0px;
+        margin: 10px 14px;
         padding: 0px;
     }
     .portfolio_page-menu {
         margin: 0px;
         padding: 0px;
-        width: 67%;
-        top: 14.5%;
         height: 48%;
+    }
+    .proffesion {
+        margin: 0px 53px;
+        width: 79%;
     }
     .nameText_1 {
         font: normal normal 700 20px/58px Ubuntu;
@@ -431,38 +427,27 @@ hr{
     }
     .title {
         font: normal normal 500 20px/24px Ubuntu;
-        left: 0;
-        top: 8px;
     }
     .textButton {
         font: normal normal 700 12px/16px Ubuntu;
-        top: 18%;
     }
     .aboutMe{
         text-align: center;
         width: 85%;
-        margin: 0 -8%;
+        margin: 0 auto;
         max-height: 55%;
-        top: 11.5%;
     }
     .linkR {
         width: 70%;
-        left: 14%;
-        top: -10px;
-    }
-    .buttons {
-        left: 20%;
-        top: -19px;
     }
     .button{
-        height: 30px;
+        padding: 0px;
+        height: 38px;
+        
     }
     .text_education {
         text-align: center;
         font: normal normal 700 20px/24px Ubuntu;
-        left: 0;
-        top: -24px;
-
     }
     .work {
         font: normal normal 700 14px/20px Ubuntu;
@@ -472,18 +457,13 @@ hr{
         flex-direction: column;
         gap: 10px;
         width: 100%;
-        height: 80%;
-        left: 0;
-        top: -65px;
     }
     .linkRel {
         margin: 0px 33px;
     }
     .error {
-        left: 39px;
-        top: 167px;
-        width: 75%;
-        height: 23%;
+        width: 103%;
+        margin: auto;
     }
 }
 
