@@ -252,14 +252,14 @@ hr{
     width: 60%;
 }
 .error{
-    width: 1200px;
+    width: 1000px;
     height: 400px;
     margin: auto;
     background-image: url(image/eror.png);
     background-position: center center;
     background-size: cover;
-    margin: 10px 0px;
-    padding: 10px;
+    margin: 1px 130px;
+
 }
 a:active{
     color: blueviolet;
