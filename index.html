@@ -11,10 +11,11 @@
 <body>
     <div class="portfolio">
         <div class="portfolio_menu hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
+            <!-- <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle" id="button">
                 <span></span>
-            </label>
+            </label> -->
+            <button id="button">MENU</button>
             <ul class="menu__box" id="box">
                 <li  class="menu_item" id="home"><a href="#" class="menu_text">HOME</a></li>
                 <li class="menu_item" id="resume"><a href="#" class="menu_text">RESUME</a></li>
@@ -94,20 +95,23 @@
         </div>
     </div>
     <script type="text/javascript">
+        let button = document.getElementById('button');
+        let box = document.getElementById('box');
         let portfolio = document.getElementById('portfolio');
         let aboutMe = document.getElementById('aboutMe');
         let err = document.getElementById('err');
-        // let box = document.getElementById('box');
-        // let button = document.getElementById('button');
 
-        // function boxOpen(){
-        //     box.style.display = "block";
-        //     boxOpen();
-        // }
-        // button. onclick = function(){
-        //     box.style.display = "block";
-        // }
-        resume. onclick = function(){
+        button.onclick = function() {
+            box.style.display = "flex";
+        };
+    //     function boxOpen( style){
+    //         box.style.display = "block";
+    //         boxOpen();
+    //     }
+    //     button.onclick = function(){
+    //         box.style.display = "block";
+    //     }
+        resume.onclick = function(){
             portfolio.style.display = "none";
             aboutMe.style.display = "flex";
             errTest.style.display = "none";
@@ -117,7 +121,7 @@
             err2.style.background = "lightseagreen";
             err3.style.background = "lightseagreen";
             err4.style.background = "lightseagreen";
-            // box.style.display = "none";
+            box.style.display = "none";
             
         }
         home.onclick = function(){
@@ -130,7 +134,7 @@
             err2.style.background = "lightseagreen";
             err3.style.background = "lightseagreen";
             err4.style.background = "lightseagreen";
-            // box.style.display = "none";
+            box.style.display = "none";
            
         }
         err1.onclick = function (){
@@ -143,7 +147,7 @@
             err2.style.background = "lightseagreen";
             err3.style.background = "lightseagreen";
             err4.style.background = "lightseagreen";
-            // box.style.display = "none";
+            box.style.display = "none";
             
         }
         err2.onclick = function (){
@@ -156,7 +160,7 @@
             err2.style.background = "red";
             err3.style.background = "lightseagreen";
             err4.style.background = "lightseagreen";
-            // box.style.display = "none";
+            box.style.display = "none";
            
         }
         err3.onclick = function (){
@@ -169,7 +173,7 @@
             err2.style.background = "lightseagreen";
             err3.style.background = "red";
             err4.style.background = "lightseagreen";
-            // box.style.display = "none";
+            box.style.display = "none";
            
         }
         err4.onclick = function (){
@@ -182,11 +186,9 @@
             err2.style.background = "lightseagreen";
             err3.style.background = "lightseagreen";
             err4.style.background = "red";
-            // box.style.display = "none";
+            box.style.display = "none";
             
         }
-        // box.style.display = "block";
-        // boxOpen();
     </script>
 </body>
 </html>
