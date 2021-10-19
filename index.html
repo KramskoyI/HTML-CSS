@@ -17,7 +17,7 @@
             </label> -->
             <button id="button">MENU</button>
             <ul class="menu__box" id="box">
-                <li  class="menu_item" id="home"><a href="#" class="menu_text">HOME</a></li>
+                <li  class="menu_item" id="home"><a  class="menu_text">HOME</a></li>
                 <li class="menu_item" id="resume"><a href="#" class="menu_text">RESUME</a></li>
                 <li class="menu_item" id="err1"><a href="#" class="menu_text">SKILS</a></li>
                 <li class="menu_item" id="err2"><a href="#" class="menu_text">PORTFOLIO</a></li>
@@ -95,100 +95,76 @@
         </div>
     </div>
     <script type="text/javascript">
-        let button = document.getElementById('button');
-        let box = document.getElementById('box');
-        let portfolio = document.getElementById('portfolio');
-        let aboutMe = document.getElementById('aboutMe');
-        let err = document.getElementById('err');
+        const button = document.getElementById('button');
+        const box = document.getElementById('box');
+        const portfolio = document.getElementById('portfolio');
+        const aboutMe = document.getElementById('aboutMe');
+        const err = document.getElementById('err');
+        
+        // lite menu item
+        let selectedLi;
 
+        box.onclick = function(event){
+            let target = event.target;
+            if (target.tagName != 'LI') return;
+            highlight(target);
+            
+        }
+        function highlight(li) {
+            if (selectedLi) {
+                selectedLi.classList.remove('highlight');
+            }
+            selectedLi = li;
+            selectedLi.classList.add('highlight'); 
+        }
+        function display(){
+            box.classList.remove('delite'); 
+        }
+        // menu on
         button.onclick = function() {
-            box.style.display = "flex";
+            box.classList.add('delite');
+            
         };
-    //     function boxOpen( style){
-    //         box.style.display = "block";
-    //         boxOpen();
-    //     }
-    //     button.onclick = function(){
-    //         box.style.display = "block";
-    //     }
+        // item on
+
+        function error(){
+            errTest.style.display = "block";
+            aboutMe.style.display = "none";
+            portfolio.style.display = "none";
+        };
+        
         resume.onclick = function(){
             portfolio.style.display = "none";
             aboutMe.style.display = "flex";
             errTest.style.display = "none";
-            resume.style.background = "red";
-            home.style.background = "lightseagreen";
-            err1.style.background = "lightseagreen";
-            err2.style.background = "lightseagreen";
-            err3.style.background = "lightseagreen";
-            err4.style.background = "lightseagreen";
-            box.style.display = "none";
+            display();
             
         }
         home.onclick = function(){
             aboutMe.style.display = "none";
             portfolio.style.display = "flex";
             errTest.style.display = "none";
-            resume.style.background = "lightseagreen";
-            home.style.background = "red";
-            err1.style.background = "lightseagreen";
-            err2.style.background = "lightseagreen";
-            err3.style.background = "lightseagreen";
-            err4.style.background = "lightseagreen";
-            box.style.display = "none";
-           
+            display();
+            
         }
         err1.onclick = function (){
-            errTest.style.display = "block";
-            aboutMe.style.display = "none";
-            portfolio.style.display = "none";
-            resume.style.background = "lightseagreen";
-            home.style.background = "lightseagreen";
-            err1.style.background = "red";
-            err2.style.background = "lightseagreen";
-            err3.style.background = "lightseagreen";
-            err4.style.background = "lightseagreen";
-            box.style.display = "none";
-            
+            error();
+            display();
         }
         err2.onclick = function (){
-            errTest.style.display = "block";
-            aboutMe.style.display = "none";
-            portfolio.style.display = "none";
-            resume.style.background = "lightseagreen";
-            home.style.background = "lightseagreen";
-            err1.style.background = "lightseagreen";
-            err2.style.background = "red";
-            err3.style.background = "lightseagreen";
-            err4.style.background = "lightseagreen";
-            box.style.display = "none";
-           
+            error();
+            display();
+          
         }
         err3.onclick = function (){
-            errTest.style.display = "block";
-            aboutMe.style.display = "none";
-            portfolio.style.display = "none";
-            resume.style.background = "lightseagreen";
-            home.style.background = "lightseagreen";
-            err1.style.background = "lightseagreen";
-            err2.style.background = "lightseagreen";
-            err3.style.background = "red";
-            err4.style.background = "lightseagreen";
-            box.style.display = "none";
-           
+            error();
+            display();
         }
         err4.onclick = function (){
-            errTest.style.display = "block";
-            aboutMe.style.display = "none";
-            portfolio.style.display = "none";
-            resume.style.background = "lightseagreen";
-            home.style.background = "lightseagreen";
-            err1.style.background = "lightseagreen";
-            err2.style.background = "lightseagreen";
-            err3.style.background = "lightseagreen";
-            err4.style.background = "red";
-            box.style.display = "none";
-            
+            error();
+            display();;
         }
+        
     </script>
 </body>
 </html>
